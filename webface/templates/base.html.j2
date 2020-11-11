@@ -29,7 +29,7 @@
 
 {% block obsah %}
 
-{% filter markdown %}
+{#{% filter markdown %}#}
 
 # Flask
 
@@ -38,14 +38,14 @@ Startovací šablona pro webový framework Flask.
 ![Flaštička]({{ url_for('static', filename='flask.png') }})
 ![Flaštičky]({{ url_for('static', filename='flasks.png') }})
 
-{% endfilter %}
+{#{% endfilter %}#}
 
 
 
 {% endblock obsah %}
 
 <footer>
-{% filter markdown %}
+{#{% filter markdown %}#}
 Užitečné odkazy: 
 
 * <a href="https://www.jakpsatweb.cz/html/">HTML</a>, 
@@ -54,7 +54,7 @@ Užitečné odkazy:
 * <a href="https://flask.palletsprojects.com/">Flask</a>, 
 * <a href="https://jinja.palletsprojects.com/templates/">Jinja2</a>
 
-{% endfilter %}
+{#{% endfilter %}#}
 </footer>
 
 
