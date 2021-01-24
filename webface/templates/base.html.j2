@@ -22,8 +22,10 @@
   <p><img src="{{ url_for('static', filename='flask-icon.png') }}" /></p>
   <ul>
     <li><a href="{{ url_for('index') }}">Index</a></li>
-    <li><a href="{{ url_for('info') }}">Info</a></li>
-    <li><a href="{{ url_for('abc') }}">ABC</a></li>
+    <li><a href="{{url_for('obdelnik')}}">Obdelník</a></li>
+    <li><a href="{{url_for('kruh')}}">Kruh</a></li>
+    <li><a href="{{url_for('ctverec')}}">Čtverec</a></li>
+    <li><a href="{{ url_for('trojuhelnik') }}">trojihelnik</a></li>
   </ul></nav>
 
 
@@ -31,12 +33,7 @@
 
 {#{% filter markdown %}#}
 
-# Flask
 
-Startovací šablona pro webový framework Flask.
-
-![Flaštička]({{ url_for('static', filename='flask.png') }})
-![Flaštičky]({{ url_for('static', filename='flasks.png') }})
 
 {#{% endfilter %}#}
 
@@ -46,13 +43,7 @@ Startovací šablona pro webový framework Flask.
 
 <footer>
 {#{% filter markdown %}#}
-Užitečné odkazy: 
 
-* <a href="https://www.jakpsatweb.cz/html/">HTML</a>, 
-* <a href="https://www.jakpsatweb.cz/css/">CSS</a>, 
-* <a href="http://docs.python.org">Python</a>, 
-* <a href="https://flask.palletsprojects.com/">Flask</a>, 
-* <a href="https://jinja.palletsprojects.com/templates/">Jinja2</a>
 
 {#{% endfilter %}#}
 </footer>

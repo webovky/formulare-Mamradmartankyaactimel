@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{title}}</title>
+ 
+</head>
+
+<body bgcolor="pink" leftmargin=20px rightmargin=20px topmargin=40px align="center">
+
+  <h1 style="font-size:300%;">OBSAH A OBVOD ČTVERCE</h1>
+
+  <font size="5" style="font-family:verdana">
+  <nav>
+  <ul type="None">
+    <li><a href="{{ url_for('index') }}">INDEX</a></li>
+    <li><a href="{{ url_for('trojuhelnik') }}">trojuhelnik</a></li>
+    <li><a href="{{ url_for('ctverec') }}">čtverec</a></li>
+    <li><a href="{{ url_for('kruh') }}">Kruh</a></li>
+    <li><a href="{{url_for('obdelnik')}}">Obdelník</a></li>
+
+  </ul></nav>
+  <hr size="5" color="red">
+
+  
+  <p><img src="{{ url_for('static', filename='ctverec.JPEG') }}" width="240" height="240" /></p>
+  
+  <form method="get">
+    <input type="text" name="a" value="{{request.args.get('a') or ''}}" placeholder="strany 'a'" />
+
+    <input type="text" name="b" value="{{request.args.get('b') or ''}}" placeholder="strany 'b'" />
+    <input type="submit" value="výsledek" />
+  </form>
+
+  obvod: {{o}}<br>obsah: {{s}}  
+  </font>
+
+<footer>
+</footer>
+
+
+</body>
+</html>
